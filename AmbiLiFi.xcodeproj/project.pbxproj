@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAA1DEF81F881018007C67A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1DEF71F881018007C67A8 /* ViewController.swift */; };
 		AAFFB0C21F817FCB000EB974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFB0C11F817FCB000EB974 /* AppDelegate.swift */; };
-		AAFFB0C41F817FCB000EB974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFB0C31F817FCB000EB974 /* ViewController.swift */; };
 		AAFFB0C61F817FCB000EB974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFFB0C51F817FCB000EB974 /* Assets.xcassets */; };
 		AAFFB0C91F817FCB000EB974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFFB0C71F817FCB000EB974 /* Main.storyboard */; };
+		AAFFB0D21F817FD7000EB974 /* zAmbiLightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFB0D11F817FD7000EB974 /* zAmbiLightController.swift */; };
+		E5F68702238146BD3E283FBE /* Pods_AmbiLiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58DAD5D3D1554897400DEC3 /* Pods_AmbiLiFi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAA1DEF71F881018007C67A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAFFB0BE1F817FCB000EB974 /* AmbiLiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbiLiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFFB0C11F817FCB000EB974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAFFB0C31F817FCB000EB974 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAFFB0C51F817FCB000EB974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAFFB0C81F817FCB000EB974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAFFB0CA1F817FCB000EB974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAFFB0CB1F817FCB000EB974 /* AmbiLiFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AmbiLiFi.entitlements; sourceTree = "<group>"; };
+		AAFFB0D11F817FD7000EB974 /* zAmbiLightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zAmbiLightController.swift; sourceTree = "<group>"; };
+		E0469CBF1C2F28ECA31792FD /* Pods-AmbiLiFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbiLiFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmbiLiFi/Pods-AmbiLiFi.release.xcconfig"; sourceTree = "<group>"; };
+		F58DAD5D3D1554897400DEC3 /* Pods_AmbiLiFi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbiLiFi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7312BABF56B78F9E74A269C /* Pods-AmbiLiFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbiLiFi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmbiLiFi/Pods-AmbiLiFi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F68702238146BD3E283FBE /* Pods_AmbiLiFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98B9F2561967504CED212767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58DAD5D3D1554897400DEC3 /* Pods_AmbiLiFi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EBF55ACEC54E6CC4C26AF19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7312BABF56B78F9E74A269C /* Pods-AmbiLiFi.debug.xcconfig */,
+				E0469CBF1C2F28ECA31792FD /* Pods-AmbiLiFi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AAFFB0B51F817FCB000EB974 = {
 			isa = PBXGroup;
 			children = (
 				AAFFB0C01F817FCB000EB974 /* AmbiLiFi */,
 				AAFFB0BF1F817FCB000EB974 /* Products */,
+				9EBF55ACEC54E6CC4C26AF19 /* Pods */,
+				98B9F2561967504CED212767 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				AAFFB0C11F817FCB000EB974 /* AppDelegate.swift */,
-				AAFFB0C31F817FCB000EB974 /* ViewController.swift */,
+				AAA1DEF71F881018007C67A8 /* ViewController.swift */,
+				AAFFB0D11F817FD7000EB974 /* zAmbiLightController.swift */,
 				AAFFB0C51F817FCB000EB974 /* Assets.xcassets */,
 				AAFFB0C71F817FCB000EB974 /* Main.storyboard */,
 				AAFFB0CA1F817FCB000EB974 /* Info.plist */,
@@ -70,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAFFB0CE1F817FCB000EB974 /* Build configuration list for PBXNativeTarget "AmbiLiFi" */;
 			buildPhases = (
+				8DBA252816E21CE30AB244A0 /* [CP] Check Pods Manifest.lock */,
 				AAFFB0BA1F817FCB000EB974 /* Sources */,
 				AAFFB0BB1F817FCB000EB974 /* Frameworks */,
 				AAFFB0BC1F817FCB000EB974 /* Resources */,
+				257AFB6713595A4DB67392FC /* [CP] Embed Pods Frameworks */,
+				A428347E8A7148295A87B38A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +159,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		257AFB6713595A4DB67392FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmbiLiFi/Pods-AmbiLiFi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmbiLiFi/Pods-AmbiLiFi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DBA252816E21CE30AB244A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmbiLiFi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A428347E8A7148295A87B38A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmbiLiFi/Pods-AmbiLiFi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAFFB0BA1F817FCB000EB974 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAFFB0C41F817FCB000EB974 /* ViewController.swift in Sources */,
+				AAA1DEF81F881018007C67A8 /* ViewController.swift in Sources */,
+				AAFFB0D21F817FD7000EB974 /* zAmbiLightController.swift in Sources */,
 				AAFFB0C21F817FCB000EB974 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +348,7 @@
 		};
 		AAFFB0CF1F817FCB000EB974 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7312BABF56B78F9E74A269C /* Pods-AmbiLiFi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AmbiLiFi/AmbiLiFi.entitlements;
@@ -277,6 +365,7 @@
 		};
 		AAFFB0D01F817FCB000EB974 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0469CBF1C2F28ECA31792FD /* Pods-AmbiLiFi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AmbiLiFi/AmbiLiFi.entitlements;

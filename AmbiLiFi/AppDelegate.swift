@@ -10,11 +10,10 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    var ambi = zAmbiLightController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        ambi.setColor()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
